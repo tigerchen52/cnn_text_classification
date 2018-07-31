@@ -44,6 +44,7 @@ def preprocess():
     )
 
 def train():
+    preprocess()
     vocab, rev_vocab = data_utils.initialize_vocabulary(FLAGS.vocabulary_file)
     embeddings = data_utils.get_trimmed_glove_vectors(FLAGS.save_embedding_file)
     model = cnn_model.CNN(
