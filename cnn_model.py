@@ -21,7 +21,7 @@ class CNN(object):
             epoch=20,
             model_path=''
     ):
-        #参数
+
         self.ntags = ntags
         self.word_num = word_num
         self.word_dim = word_dim
@@ -51,7 +51,7 @@ class CNN(object):
             self.pre_embedding = word_embedding
             self.train_able = True
 
-        #初始化
+
         self.init_graph()
 
     def place_holder(self):
@@ -227,5 +227,5 @@ if __name__ == '__main__':
     )
     train_data = data_utils.text_dataset('./input/data/train_data.ids', 100)
     valid_data = data_utils.text_dataset('./input/data/valid_data.ids', 100)
-    print('训练集大小={a},测试集大小={b}'.format(a=train_data.__len__(), b=valid_data.__len__()))
+    print('train set={a},valid set={b}'.format(a=train_data.__len__(), b=valid_data.__len__()))
     model.train(train_data, valid_data)
