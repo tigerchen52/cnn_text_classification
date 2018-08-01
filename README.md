@@ -15,6 +15,17 @@ data format example
 0	far too clever by half , howard's film is really a series of strung-together moments , with all the spaces in between filled with fantasies , daydreams , memories and one fantastic visual trope after another . 
 1	elvira fans could hardly ask for more . 
 ```
+## Download GloVe embedding
+[http://nlp.stanford.edu/data/glove.840B.300d.zip](http://nlp.stanford.edu/data/glove.840B.300d.zip)
+unzip the data and move to the path
+```
+./input/data/embed/
+```
+
+## Process data
+```
+python process
+```
 
 ## Training
 To download the pretrained embdding
